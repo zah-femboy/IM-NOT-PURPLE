@@ -2282,7 +2282,7 @@ do
         Position = UDim2.fromOffset(5, 2),
         TextXAlignment = Enum.TextXAlignment.Center,
         
-        Text = '[ Keybinds ]';
+        Text = ' Keybinds ';
         ZIndex = 104;
         Parent = KeybindInner;
     });
