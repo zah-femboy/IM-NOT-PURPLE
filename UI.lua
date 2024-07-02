@@ -2610,7 +2610,7 @@ function Library:CreateWindow(...)
         local TabFrame = Library:Create('Frame', {
             Name = 'TabFrame',
             BackgroundTransparency = 1;
-            Position = UDim2.new(6, 0, 0, 0);
+            Position = UDim2.new(0, 0, 0, 0);
             Size = UDim2.new(1, 0, 1, 0);
             Visible = false;
             ZIndex = 2;
@@ -3031,7 +3031,7 @@ function Library:CreateWindow(...)
             if Input.UserInputType == Enum.UserInputType.Keyboard and Input.KeyCode.Name == Library.ToggleKeybind.Value then
                 task.spawn(Library.Toggle)
             end
-        elseif Input.KeyCode == Enum.KeyCode.RightControl or (Input.KeyCode == Enum.KeyCode.RightShift and (not Processed)) then
+        elseif Input.KeyCode == Enum.KeyCode.RightShift or (Input.KeyCode == Enum.KeyCode.End and (not Processed)) then
             task.spawn(Library.Toggle)
         end
 
