@@ -2444,7 +2444,7 @@ function Library:CreateWindow(...)
         AnchorPoint = Config.AnchorPoint,
         BackgroundColor3 = Color3.new(0, 0, 0);
         BorderSizePixel = 0;
-        Position = Config.Position,(2, 2, 2)
+        Position = Config.Position,
         Size = Config.Size,
         Visible = false;
         ZIndex = 1;
@@ -2817,7 +2817,7 @@ function Library:CreateWindow(...)
 
             local TabboxButtons = Library:Create('Frame', {
                 BackgroundTransparency = 1;
-                Position = UDim2.new(0, 0, 0, 1);
+                Position = UDim2.new(5, 2, 0, 1);
                 Size = UDim2.new(1, 0, 0, 18);
                 ZIndex = 5;
                 Parent = BoxInner;
