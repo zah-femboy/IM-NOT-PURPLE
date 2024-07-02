@@ -2444,7 +2444,7 @@ function Library:CreateWindow(...)
         AnchorPoint = Config.AnchorPoint,
         BackgroundColor3 = Color3.new(0, 0, 0);
         BorderSizePixel = 0;
-        Position = Config.Position,
+        Position = Config.Position,(2, 2, 2)
         Size = Config.Size,
         Visible = false;
         ZIndex = 1;
